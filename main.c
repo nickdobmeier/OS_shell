@@ -1,6 +1,6 @@
-// Nicholas Dobmeier  -  njd170130
+// Nicholas Dobmeier
 
-#include <stdio.h>              // necessary header files
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <sys/types.h>
