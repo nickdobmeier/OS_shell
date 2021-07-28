@@ -8,7 +8,7 @@
 #include <stdbool.h>
 #include <sys/wait.h>
 #define SIZE 90                 // max length of each user command
-void childProcess(char* str);   // prototypes
+void childProcess(char* str);
 void err_sys(const char* x);
 void removeLast(char* str, int n);
 
