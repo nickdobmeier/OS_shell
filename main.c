@@ -80,7 +80,8 @@ void childProcess(char* inputCommand){
         
         numTokens++;
         token = strtok(NULL, delimiterChars);       // grab next token
-    }
+    }                                               // In subsequent calls, the function expects a null pointer and uses the position right after
+                                                            // the end of the last token as the new starting location for scanning.
     strTokens[numTokens] = NULL;                    // last index NULL so that exec() knows where last argument in strTokens is
     
     if (execvp(strTokens[0], strTokens) < 0) {      // don't need    ( strTokens[0] == NULL || )
